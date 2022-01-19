@@ -1,3 +1,5 @@
+print("This is the blood_calculator module and python calls it {}".format(__name__))
+
 def interface():
     while(True):
         print("My Program")
@@ -73,4 +75,6 @@ def driver_total():
 def printTotalResults():
     print(driver_total())
 
-interface()
+# This will only run if you are in the main program
+if(__name__ == "__main__"):
+    interface()
