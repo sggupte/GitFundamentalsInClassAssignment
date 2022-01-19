@@ -24,4 +24,7 @@ def driver():
     status = check_HDL(hdl)
     return status
 
+def printResults():
+    print(driver())
+
 interface()
