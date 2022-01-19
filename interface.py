@@ -4,6 +4,7 @@ def interface():
         print("Options:")
         print("0 - HDL Analysis")
         print("1 - LDL Analysis")
+        print("2 - Total Analysis")
         print("9 - Quit")
         choice = input("Enter your choice: ")
         if choice=='9':
@@ -13,6 +14,9 @@ def interface():
             return
         elif choice =='1':
             printLDLResults()
+            return
+        elif choice == '2':
+            printTotalResults()
             return
 
 def enter():
