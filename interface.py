@@ -8,7 +8,15 @@ def interface():
             return
 
 def enterHDL():
-    hdl = input("Please input your HDL: ")
-    
+    hdl = int(input("Please input your HDL: "))
+    return hdl
 
+def check_HDL(hdl):
+    if hdl >= 60:
+        return "Normal"
+    elif hdl < 40:
+        return "Low"
+    else:
+        return "Borderline Low"
+    
 interface()
