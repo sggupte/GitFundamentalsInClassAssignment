@@ -32,6 +32,9 @@ def driver_HDL():
     status = check_HDL(hdl)
     return status
 
+def printHDLResults():
+    print(driver_HDL())
+
 def check_LDL(ldl):
     if ldl < 130:
         return "Normal"
@@ -46,9 +49,6 @@ def driver_LDL():
     ldl= enter()
     status = check_LDL(ldl)
     return status
-
-def printHDLResults():
-    print(driver_HDL())
 
 def printLDLResults():
     print(driver_LDL())
