@@ -61,4 +61,12 @@ def check_total(total):
     else:
         return "Borderline High"
 
+def driver_total():
+    total = enter()
+    status = check_total(total)
+    return status
+
+def printTotalResults():
+    print(driver_total())
+
 interface()
