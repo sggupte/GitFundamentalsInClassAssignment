@@ -3,12 +3,16 @@ def interface():
         print("My Program")
         print("Options:")
         print("0 - HDL Analysis")
+        print("1 - LDL Analysis")
         print("9 - Quit")
         choice = input("Enter your choice: ")
         if choice=='9':
             return
         elif choice=='0':
             printHDLResults()
+            return
+        elif choice =='1':
+            printLDLResults()
             return
 
 def enter():
@@ -38,7 +42,15 @@ def check_LDL(ldl):
     else:
         return "Very High"
 
+def driver_LDL():
+    ldl= enter()
+    status = check_LDL(ldl)
+    return status
+
 def printHDLResults():
     print(driver_HDL())
+
+def printLDLResults():
+    print(driver_LDL())
 
 interface()
