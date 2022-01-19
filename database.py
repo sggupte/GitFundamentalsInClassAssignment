@@ -13,3 +13,5 @@ HDL_value = 55
 
 classification = check_HDL(HDL_value)
 print("55 is {}".format(classification))
+
+# Added .gitignore file to not push the __pycache__ files to github
