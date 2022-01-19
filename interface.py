@@ -2,9 +2,13 @@ def interface():
     while(True):
         print("My Program")
         print("Options:")
+        print("0 - HDL Analysis")
         print("9 - Quit")
         choice = input("Enter your choice: ")
         if choice=='9':
+            return
+        elif choice=='0':
+            printHDLResults()
             return
 
 def enterHDL():
@@ -24,7 +28,7 @@ def driver():
     status = check_HDL(hdl)
     return status
 
-def printResults():
+def printHDLResults():
     print(driver())
 
 interface()
