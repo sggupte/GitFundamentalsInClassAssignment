@@ -53,4 +53,12 @@ def driver_LDL():
 def printLDLResults():
     print(driver_LDL())
 
+def check_total(total):
+    if total < 200:
+        return "Normal"
+    elif total >= 240:
+        return "High"
+    else:
+        return "Borderline High"
+
 interface()
