@@ -18,5 +18,10 @@ def check_HDL(hdl):
         return "Low"
     else:
         return "Borderline Low"
-    
+
+def driver():
+    hdl = enterHDL()
+    status = check_HDL(hdl)
+    return status
+
 interface()
