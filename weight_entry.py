@@ -8,8 +8,9 @@ def input_weight_entry():
 
 def parse_weight_input(weight_input):
     weight, units = weight_input.split(' ')
-    weight = int(weight)
-    if units == "lb":
+    weight = float(weight)
+    units = units.lower()
+    if units in ["lb", "lbs", "pounds", "#"]:
         weight_kg = convert_lb_to_kg(weight)
     else:
         weight_kg = weight
@@ -21,6 +22,22 @@ def convert_lb_to_kg(weight_lb):
     weight_kg = weight_lb / 2.20462
     return weight_kg
 
+
+# This function returns nothing
+# so we can't test it
+def complicated_math(a, b, c):
+    z = a + b * c
+    print(z)
+
+
+# Test this function instead
+def do_the_complicated_math(a, b, c):
+    return a + b * c
+
+
+def add(a, b):
+    c = a + b
+    return c
 
 if __name__ == "__main__":
     input_weight_entry()
