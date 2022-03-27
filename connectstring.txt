@@ -1,0 +1,1 @@
+mongodb+srv://sggupte:<password>@bme547.7cdfc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
